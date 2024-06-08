@@ -3,6 +3,7 @@ local ns = api.nvim_create_namespace('CursorWord')
 local set_decoration_provider = api.nvim_set_decoration_provider
 local cword = nil
 ffi.cdef([[
+  typedef int32_t linenr_T;
   char *ml_get(linenr_T lnum);
 ]])
 local ml_get = ffi.C.ml_get
