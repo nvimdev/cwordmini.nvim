@@ -59,7 +59,7 @@ return {
           return false
         end
         api.nvim_win_set_hl_ns(winid, ns)
-        cache.len = vim.fn.strdisplaywidth(cache.cword)
+        cache.len = api.nvim_strwidth(cache.cword)
       end,
       on_line = function(_, _, bufnr, row)
         for spos in find_occurrences(ffi.string(ml_get(row + 1)), cache.cword) do
