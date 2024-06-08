@@ -54,6 +54,7 @@ return {
           return false
         end
         cache.cword = expand('<cword>')
+        print(cache.cword)
         if not cache.cword:find('[%w%z\192-\255]') then
           cache.cword = nil
           return false

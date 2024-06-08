@@ -3,6 +3,9 @@
 A very minimal less than 80 lines plugin used for highlight all cursor words on
 buffer. support multiple-bytes characters, no any autocmd event binding.
 
+Notic it works on neovim redraw circly, so if not trigger redraw this plugin will
+not works correctly.
+
 
 ## Usage
 
