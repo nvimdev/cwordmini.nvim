@@ -1,7 +1,7 @@
 # cwordmini.nvim
 
-A very minimal less than 50 lines plugin used for highlight all cursor words on
-buffer. no any autocmd event binding.
+A very minimal less than 80 lines plugin used for highlight all cursor words on
+buffer. support multiple-bytes characters, no any autocmd event binding.
 
 
 ## Usage
@@ -11,6 +11,8 @@ buffer. no any autocmd event binding.
 ```
 
 Option in setup param table just `exclude` filetype or buftype list table
+
+Please config highlight group 'CursorWord' after setup or in your colorscheme 
 
 
 ## Licenses MIT
